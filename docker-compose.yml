@@ -6,7 +6,11 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
+<<<<<<< HEAD
       - .:/BUILD  # Mounts the local directory into the container
+=======
+      - .:/BUILD  # Mounts your local project folder into the container
+>>>>>>> af86aec (added docker-compose.yml for dev setup)
     working_dir: /BUILD
     command: ["sleep", "infinity"]  # Keeps the container running
     stdin_open: true
